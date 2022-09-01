@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/lobbyStyle.css" />
+    <title>Lobby</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h2><b class="a">Tic</b> Tac <b class="b">Toe</b></h2>
+      </div>
+      <div class="username">
+        <h2>{{username}}</h2>
+      </div>
+
+      <div class="logout">
+        <form action="" method="post">
+          <button name="logout" value="logout">Logout</button>
+        </form>
+      </div>
+    </header>
+    <section>
+      <div class="optionsContainer">
+        <h2 class="option">Create</h2>
+        <form action="" method="post">
+          <div class="card">
+            <h2>3 x 3</h2>
+            <button name="create" value="1">Start</button>
+          </div>
+          
+        </form>
+      </div>
+      <div class="optionsContainer">
+        <h2 class="option">Join <a href="/home">Refresh</a></h2>
+        <form action="" method="post">
+          % if mode1 == True:
+            <div class="card">
+              <h2>3 x 3</h2>
+              <h3>{{active1}}/2</h3>
+                <button name="delete" value="1">X</button>
+                <button name="join" value="1">Join</button>
+            </div>
+          % end
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/gameStyle.css" />
+    <title>Lobby</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h2><b class="a">Tic</b> Tac <b class="b">Toe</b></h2>
+      </div>
+      <div class="username">
+        <h2>{{username}}</h2>
+      </div>
+
+      <div class="logout">
+        <form action="" method="post">
+          <button name="logout" value="logout">Logout</button>
+        </form>
+      </div>
+    </header>
+    <section>
+        <div class="plane">
+          %if(winner == None):
+            <form action="" method="post">
+              %if (len(players) == 2):
+                %for i in range(len(board)-1):
+                    %if (board[i] == players[0].id):
+                        <button class="p1">X</button>
+                    %end
+                    %if (board[i] == players[1].id):
+                        <button class="p2">O</button>
+                    %end
+                    %if (board[i] == 0):
+                      <button name="tile" value="{{i}}"></button>
+                    %end
+                %end
+              %end
+            </form>
+          %end
+          %if(not winner == None):
+              <h1>Game Over!</h1>
+          %end
+        </div>
+
+        <div class="scoreBoard">
+          %for player in players:
+              <h2>{{player.username}}</h2>
+          %end
+        
+        </div>
+        <form action="" method="post">
+          <button class="leave" name="leave" value="1">Leave</button>
+        </form>
+        
+      </div>
+    </section>
+  </body>
+  <script>
+    setTimeout(function() {
+      window.location.reload();
+  }, 3000);
+  </script>
+</html>
+
+<!---->
