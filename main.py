@@ -125,6 +125,6 @@ def __main__():
         
             
         
-    run(host='192.168.1.31', port= 8080)
+    run(host='localhost', port= 8080)
     
 __main__()
