@@ -32,7 +32,7 @@ How to use the program and play?
 
 -Create a new game
 
--Join the game and wait for your opponent
+-Join the game and wait for your opponent (Your opponent needs to go to http://localhost:8080/, register, log in and join the game from a different browser or a different computer on the same wi-fi connection)
 
 -Play normal tic tac toe 
 
