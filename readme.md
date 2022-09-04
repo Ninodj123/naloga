@@ -2,9 +2,19 @@ This is a simple 2 player web Tic Tac Toe game made in python with bottle librar
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-To setup install bottle, collections, json and numpy using pip install
+Requirements:
 
-Before you start using application you must first remove one empty line in data.jason file in data directionary. 
+-Install bottle, collections, json and numpy using pip install. (Tutorial on pip install: https://phoenixnap.com/kb/install-pip-windows)
+
+-Download the zip file and un-zip it into any folder
+
+-Open folder with the program
+
+-Open data folder
+
+-Open data.jason file
+
+-Remove one empty line in that file. (You should be left with only one empty line in that file now)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -14,7 +24,7 @@ How to use the program and play?
 
 -Open folder destination
 
--Run main.py (or go to visual studio code and run main.py from there)
+-Run main.py (Alternative: go to visual studio code and run main.py from there)
 
 -Go to http://localhost:8080/ and register
 
