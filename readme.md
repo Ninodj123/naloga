@@ -42,3 +42,25 @@ How to use the program and play?
 
 
 Somtimes cookies need to be cleared if you do not log out before terminating the server.
+
+To clear cookies on your browser:
+
+This is only for google chrome but the process is similar on other browsers:
+
+-Go to http://localhost:8080/
+
+-Pres right click on the mouse
+
+-Press inspect page
+
+-Press ">>" next to the Sources
+
+-Press Applications in drop down menue
+
+-Go to cookies
+
+-Select and un-wanted cookies
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Thank you for using the program.
